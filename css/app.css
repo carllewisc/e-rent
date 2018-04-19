@@ -1,0 +1,95 @@
+body {
+    font-family:'Jura', sans-serif!important;
+}
+
+nav h1 {
+    color: #2b7c74;
+    font-size: 50px;
+}
+
+nav.navbar, .navbar {
+    border-bottom: 1px solid black;
+    border-width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 50px;
+    max-width: 90%;
+}
+
+/*---- ---- MAIN ---- ----*/
+.main {
+    margin-bottom: 50px;
+}
+
+.main .button {
+    color: white;
+    background-color: #2b7c74!important;  
+    padding: 6px 40px!important; 
+    border-radius: 5px!important;
+}
+
+.productos > div{
+    position: relative;
+    /*float: right;*/
+}
+
+.navbar {
+    margin-bottom: 1.5em;
+}
+.color, li a {
+   color: #2b7c74!important;
+}
+
+hr {
+    background-color: black;
+}
+
+.productos .producto {
+    position: relative;
+}
+
+.productos .producto img {
+    width: 100%;
+}
+
+.productos .producto .precio span {
+    color: #fff;
+}
+.precio {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 49px; 
+    width: 110px; 
+    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 0 0 0 0.1875rem;
+}
+
+.margin {
+    margin-bottom: 1.25rem;
+}
+
+p {
+    letter-spacing: 0.05em;
+}
+
+.numero {
+    font-family:helvetica-w01-light,helvetica-w02-light,sans-serif;"
+}
+
+.card {
+    border: 1px solid white !important; /*Para eliminar el border*/
+    background-color: peru!important;
+}
+
+.img-thumbnail {
+    transition: all .3s;
+}
+
+.img-thumbnail:hover {
+    opacity: 0.8;
+    background-color:rgba(0,0,0,0.5);
+    transition: all .3s;
+}
