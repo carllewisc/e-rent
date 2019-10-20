@@ -1,95 +1,189 @@
 body {
-    font-family:'Jura', sans-serif!important;
+  font-family: 'Jura', sans-serif!important;
 }
 
-nav h1 {
-    color: #2b7c74;
-    font-size: 50px;
+.margin {
+  margin-bottom: 1.25rem;
 }
 
-nav.navbar, .navbar {
-    border-bottom: 1px solid black;
-    border-width: 80%;
-    margin: 0 auto;
-    margin-top: 1rem;
-    margin-bottom: 50px;
-    max-width: 90%;
+hr {
+  background-color: black;
+}
+p {
+  letter-spacing: 0.05em;
+}
+input[type="search"] {
+  border: none;
+  font-size: 0.875em;
+  width: 75%;
+}
+input[type="search"]:focus {
+  outline: 0;
+}
+
+.card {
+  border: 1px solid white !important;
+}
+.numero {
+  font-family: helvetica-w01-light,helvetica-w02-light,sans-serif;"
+}
+
+.navbar h1,
+.color,
+.nav .nav-link,
+.search h1 a {
+   color: #2b7c74!important;
+}
+
+.navbar h1 {
+  font-size: 50px;
+}
+nav.navbar, 
+.navbar {
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 50px;
+  max-width: 90%;
+}
+.navbar {
+  margin-bottom: 1.5em;
 }
 
 /*---- ---- MAIN ---- ----*/
 .main {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
-
 .main .button {
-    color: white;
-    background-color: #2b7c74!important;  
-    padding: 6px 40px!important; 
-    border-radius: 5px!important;
+  color: white;
+  background-color: #2b7c74!important;  
+  padding: 6px 40px!important; 
+  border-radius: 5px!important;
 }
 
-.productos > div{
-    position: relative;
-    /*float: right;*/
-}
-
-.navbar {
-    margin-bottom: 1.5em;
-}
-.color, li a {
-   color: #2b7c74!important;
-}
-
-hr {
-    background-color: black;
-}
-
+/*---- ---- LISTADO DE PRODUCTOS ---- ----*/
 .productos .producto {
-    position: relative;
+  position: relative;
 }
-
 .productos .producto img {
-    width: 100%;
+  width: 100%;
+  transition: all .3s;
 }
-
+.productos .producto img:hover {
+  opacity: 0.8;
+  background-color:rgba(0,0,0,0.5);
+  transition: all .3s;
+}
+.productos .producto .precio {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 49px; 
+  width: 110px; 
+  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  border-radius: 0 0 0 0.1875rem;
+}
 .productos .producto .precio span {
-    color: #fff;
+  color: #fff;
 }
-.precio {
+
+/**** PAGE - SEARCH ****/
+.list-group-item {
+  padding: 0.5rem 1.25rem;
+  border: none; 
+  font-family: 'Jura', sans-serif!important;
+}
+
+.productos .producto.border {
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  padding: 1px;
+}
+
+.productos .icon-top {
+  position: absolute;
+  top: 5%;
+  left: 4.3%;
+  text-transform: uppercase;
+  color: #FFF;
+  z-index: 2;
+  font-size: .80em;
+  font-weight: bold;
+}
+.productos svg {
+  position: absolute;
+  top: -10px;
+  left: -1px;
+  fill: #2B7C74;
+}
+
+.buscador .left .buscador {
+  border: 1px solid rgba(43, 124, 116, 1);
+  background-color: transparent;
+  border-radius: 10px;
+  outline: 0;
+  padding: 0.49em 1em;
+}
+
+.buscador .left div a,
+.buscador .right div a {
+  text-decoration: none;
+  color: #2b7c74!important;
+  font-size: 0.875em;
+}
+
+.buscador .left div {
+  position: relative;
+}
+.buscador .left div a::before {
+  content: '';
+  top: -9px;
+  left: -5px;
+  position: absolute;
+  display: inline-block;
+  width: 0.1em;
+  height: 3em;
+  background-color: rgba(43, 124, 116, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .buscador .right {
+    position: relative;
+  }
+
+  .buscador .right svg {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    height: 49px; 
-    width: 110px; 
-    background-color: rgba(255, 255, 255, 0.4);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1em;
-    border-radius: 0 0 0 0.1875rem;
+    top: 8px;
+    left: -6px;
+  }
+
+  .buscador .right div {
+    position: absolute;
+    top: -8px;
+    left: 22px;
+  }
+
+  .buscador .right div p {
+    margin: 0;
+  }
 }
 
-.margin {
-    margin-bottom: 1.25rem;
-}
+/* RESPOSIVE */
+@media screen and (max-width: 576px) {
+  .navbar {
+    max-width: 95%!important;
+    padding: 0.5rem .3rem;
+  }
+  .nav-link {
+    padding: 0.5rem .3rem;
+  }
 
-p {
-    letter-spacing: 0.05em;
-}
-
-.numero {
-    font-family:helvetica-w01-light,helvetica-w02-light,sans-serif;"
-}
-
-.card {
-    border: 1px solid white !important; /*Para eliminar el border*/
-    background-color: peru!important;
-}
-
-.img-thumbnail {
-    transition: all .3s;
-}
-
-.img-thumbnail:hover {
-    opacity: 0.8;
-    background-color:rgba(0,0,0,0.5);
-    transition: all .3s;
+  /**** PAGE - SEARCH ****/
+  .search .buscador .right {
+      justify-content: center;
+  }
 }
